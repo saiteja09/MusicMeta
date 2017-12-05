@@ -1,0 +1,127 @@
+// Place any CSS rules you want to apply on both iOS and Android here.
+// This is where the vast majority of your CSS code goes.
+
+// Font icon class
+.fa {
+    font-family: "FontAwesome";
+ }
+ // Common page class
+ .page-content {
+     
+     .page-placeholder {
+         color: $page-icon-color;
+         font-size: $page-content-placeholder-font-size;
+         vertical-align: center;
+         horizontal-align: center;
+     }
+ 
+     .page-icon {
+         font-size: 72;
+         vertical-align: top;
+         horizontal-align: center;
+         color: $page-icon-color;
+         margin-top: 20%;
+     }
+ }
+ //Action bar
+ ActionBar .action-bar-title {
+     horizontal-align: center;
+ }
+
+ .settings_input_fields{
+    margin-left: 20;
+    margin-right: 20;
+ }
+
+ .btn_settings{
+     width: 120;
+ }
+
+ .label_basicAuth{
+     font-weight: bold;
+     font-size: 16;
+ }
+
+ .label-album-name{
+    margin-top: 20;
+    font-weight: bold;
+    font-size: 18;
+    text-align: center;
+    color: #000000;
+
+ }
+
+ 
+ .label-artist-name{
+    margin-top:10;
+    margin-bottom: 10;
+    font-size: 15;
+    text-align: center;
+    color: #000000;
+}
+
+
+.list-albumid{
+    visibility: collapse;
+}
+
+.label-tracks{
+    margin-left: 20;
+    margin-top: 10;
+    font-weight: bold;
+    font-size: 16.5;
+    text-align: left;
+    color: #000000;
+}
+
+.album-browse{
+    margin-left: 20;
+    margin-right: 20;
+}
+
+.album-art-featured{
+    margin-top: 20;
+}
+
+
+.label-trackids{
+    visibility: collapse;
+}
+
+.label-track-name{
+    font-weight: 500;
+}
+
+.album-info-featured{
+    background-color: #d9d9d9;
+}
+
+.progress-logo{
+    margin-top:15;
+    horizontal-align: left;
+}
+
+.sidedrawer-header-brand{
+    margin-top:10;
+    font-weight: 600;
+}
+
+.btn-log-clear{
+    horizontal-align: right;
+    margin: 15;
+    width: 150;
+}
+
+.log-header{
+    font-weight: 500;
+    margin-left: 20;
+    color: #000000;
+}
+
+.log-value{
+    margin-left: 20;
+    color: #33cd5f;
+}
+
+
+

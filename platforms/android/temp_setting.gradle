@@ -1,0 +1,13 @@
+android {
+            defaultConfig {
+                applicationId = "com.datadirect.MusicMeta"
+
+                if (false) {
+                    minSdkVersion = false
+                }
+
+                if (false) {
+                    targetSdkVersion = false
+                }
+            }
+        }

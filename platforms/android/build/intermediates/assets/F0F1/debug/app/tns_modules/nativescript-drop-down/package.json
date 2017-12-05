@@ -1,0 +1,111 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-drop-down",
+        "scope": null,
+        "escapedName": "nativescript-drop-down",
+        "name": "nativescript-drop-down",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta"
+    ]
+  ],
+  "_from": "nativescript-drop-down@latest",
+  "_id": "nativescript-drop-down@3.2.0",
+  "_inCache": true,
+  "_location": "/nativescript-drop-down",
+  "_nodeVersion": "6.11.4",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/nativescript-drop-down-3.2.0.tgz_1508753398769_0.08442160463891923"
+  },
+  "_npmUser": {
+    "name": "pstaev",
+    "email": "peter@tangrasoft.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-drop-down",
+    "scope": null,
+    "escapedName": "nativescript-drop-down",
+    "name": "nativescript-drop-down",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-drop-down/-/nativescript-drop-down-3.2.0.tgz",
+  "_shasum": "9c9cb97bfc15974332e8ebe89dc913eadf4562ad",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-drop-down",
+  "_where": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta",
+  "author": {
+    "name": "Peter Staev",
+    "email": "peter@tangrasoft.com"
+  },
+  "bugs": {
+    "url": "https://github.com/PeterStaev/NativeScript-Drop-Down/issues"
+  },
+  "contributors": [
+    {
+      "name": "Dick Smith",
+      "url": "https://github.com/DickSmith"
+    }
+  ],
+  "dependencies": {},
+  "description": "A NativeScript DropDown widget.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "9c9cb97bfc15974332e8ebe89dc913eadf4562ad",
+    "tarball": "https://registry.npmjs.org/nativescript-drop-down/-/nativescript-drop-down-3.2.0.tgz"
+  },
+  "homepage": "https://github.com/PeterStaev/NativeScript-Drop-Down#readme",
+  "keywords": [
+    "NativeScript",
+    "DropDown",
+    "Spinner",
+    "tangra"
+  ],
+  "license": "Apache-2.0",
+  "main": "drop-down",
+  "maintainers": [
+    {
+      "name": "pstaev",
+      "email": "peter.staev@gmail.com"
+    }
+  ],
+  "name": "nativescript-drop-down",
+  "nativescript": {
+    "platforms": {
+      "ios": "3.0.0",
+      "android": "3.0.0"
+    },
+    "plugin": {
+      "nan": "true",
+      "pan": "true",
+      "core3": "true",
+      "category": "Interface"
+    }
+  },
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "tns-core-modules": "^3.1.0 || >3.3.0-"
+  },
+  "readme": "[![Build Status](https://travis-ci.org/PeterStaev/NativeScript-Drop-Down.svg?branch=master)](https://travis-ci.org/PeterStaev/NativeScript-Drop-Down)\n[![npm downloads](https://img.shields.io/npm/dm/nativescript-drop-down.svg)](https://www.npmjs.com/package/nativescript-drop-down)\n[![npm downloads](https://img.shields.io/npm/dt/nativescript-drop-down.svg)](https://www.npmjs.com/package/nativescript-drop-down)\n[![npm](https://img.shields.io/npm/v/nativescript-drop-down.svg)](https://www.npmjs.com/package/nativescript-drop-down)\n\nA NativeScript DropDown widget. The DropDown displays items from which the user can select one. For iOS it wraps up a [UILabel](https://developer.apple.com/reference/uikit/uilabel) with an `inputView` set to an [UIPickerView](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIPickerView_Class/index.html) which displays the items. For Android it wraps up the [Spinner](http://developer.android.com/reference/android/widget/Spinner.html) widget.\n\n## Screenshot\n![Screenshot of iOS and Android](https://raw.githubusercontent.com/PeterStaev/NativeScript-Drop-Down/master/docs/screenshot.png)\n\n## Installation\nRun the following command from the root of your project:\n\n`tns plugin add nativescript-drop-down`\n\nThis command automatically installs the necessary files, as well as stores nativescript-drop-down as a dependency in your project's package.json file.\n\n## Configuration\nThere is no additional configuration needed!\n\n## API\n\n### Events\n* **opened**  \nTriggered when the DropDown is opened. \n\n* **closed**  \nTriggered when the DropDown is closed. \n\n* **selectedIndexChanged**  \nTriggered when the user changes the selection in the DropDown \n\n### Static Properties\n* **openedEvent** - *String*  \nString value used when hooking to opened event.\n\n* **closedEvent** - *String*  \nString value used when hooking to closed event.\n\n* **selectedIndexChangedEvent** - *String*  \nString value used when hooking to selectedIndexChanged event.\n\n### Instance Properties\n* **ios** - *[UILabel](https://developer.apple.com/reference/uikit/uilabel)*  \nGets the native iOS view that represents the user interface for this component. Valid only when running on iOS.\n\n* **android** - *[android.widget.Spinner](http://developer.android.com/reference/android/widget/Spinner.html)*  \nGets the native android widget that represents the user interface for this component. Valid only when running on Android OS.\n\n* **items** - *Array | ItemsSource*  \nGets or sets the items collection of the DropDown. The items property can be set to an array or an object defining length and getItem(index) method.\n\n* **selectedIndex** - *Number*  \nGets or sets the selected index of the DropDown.\n\n* **hint** - *String*  \nGets or sets the hint for the DropDown.\n\n* **isEnabled** - *boolean*  \nGets or sets whether the drop down is enabled. If you want to apply a specific style you can use the `:disabled` pseudo css selector. \n\n* **accessoryViewVisible** - *boolean* (Default: true)  \nGets/sets whether there will be an accessory view (toolbar with Done button) under iOS. Valid only when running on iOS.\n\n### Methods \n* **open(): void**  \nOpens the drop down.\n\n* **close(): void**  \nCloses the drop down. \n\n## Usage\nYou need to add `xmlns:dd=\"nativescript-drop-down\"` to your page tag, and then simply use `<dd:DropDown/>` in order to add the widget to your page.\n\n```xml\n<!-- test-page.xml -->\n<Page xmlns=\"http://schemas.nativescript.org/tns.xsd\" loaded=\"pageLoaded\" xmlns:dd=\"nativescript-drop-down\">\n  <GridLayout rows=\"auto, auto, *\" columns=\"auto, *\">\n    <dd:DropDown items=\"{{ items }}\" selectedIndex=\"{{ selectedIndex }}\" \n                 opened=\"dropDownOpened\" closed=\"dropDownClosed\" \n                 selectedIndexChanged=\"dropDownSelectedIndexChanged\"\n                 row=\"0\" colSpan=\"2\" />\n    <Label text=\"Selected Index:\" row=\"1\" col=\"0\" fontSize=\"18\" verticalAlignment=\"bottom\"/>\n    <TextField text=\"{{ selectedIndex }}\" row=\"1\" col=\"1\" />\n  </GridLayout>\n</Page>\n```\n\n```ts\n// test-page.ts\nimport observable = require(\"data/observable\");\nimport observableArray = require(\"data/observable-array\");\nimport pages = require(\"ui/page\");\nimport { SelectedIndexChangedEventData } from \"nativescript-drop-down\";\n\nvar viewModel: observable.Observable;\n\nexport function pageLoaded(args: observable.EventData) {\n    var page = <pages.Page>args.object;\n    var items = new observableArray.ObservableArray();\n\n    viewModel = new observable.Observable();\n\n    for (var loop = 0; loop < 20; loop++) {\n        items.push(\"Item \" + loop.toString());\n    }\n\n    viewModel.set(\"items\", items);\n    viewModel.set(\"selectedIndex\", 15);\n\n    page.bindingContext = viewModel;\n}\n\nexport function dropDownOpened(args: EventData) {\n    console.log(\"Drop Down opened\");\n}\n\nexport function dropDownClosed(args: EventData) {\n    console.log(\"Drop Down closed\");\n}\n\nexport function dropDownSelectedIndexChanged(args: SelectedIndexChangedEventData) {\n    console.log(`Drop Down selected index changed from ${args.oldIndex} to ${args.newIndex}`);\n}\n```\n\n## Usage in Angular\n\n##### Migration to 3.0+\n\n- Remove:\n```typescript\nregisterElement(\"DropDown\", () => require(\"nativescript-drop-down/drop-down\").DropDown);`\n```\n- Import `DropDownModule` in `NgModule`:\n```typescript\nimport { DropDownModule } from \"nativescript-drop-down/angular\";\n//......\n@NgModule({\n\t//......\n\timports: [\n        //......\n\t\tDropDownModule,\n        //......\n\t],\n    //......\n})\n```\n\n##### Example Usage\n```ts\n// main.ts\nimport { NgModule } from \"@angular/core\";\nimport { NativeScriptModule } from \"nativescript-angular/nativescript.module\";\nimport { platformNativeScriptDynamic } from \"nativescript-angular/platform\";\nimport { DropDownModule } from \"nativescript-drop-down/angular\";\nimport { AppComponent } from \"./app.component\";\n\n@NgModule({\n    declarations: [ AppComponent ],\n    bootstrap:    [ AppComponent ],\n    imports:      [\n        NativeScriptModule,\n        DropDownModule,\n    ],\n})\nclass AppComponentModule {\n}\n\nplatformNativeScriptDynamic().bootstrapModule(AppComponentModule);\n```\n\n```html\n<!-- app.component.html -->\n<StackLayout>\n    <GridLayout rows=\"auto, auto, *\"\n                columns=\"auto, *\">\n        <DropDown #dd\n                  backroundColor=\"red\"\n                  [items]=\"items\"\n                  [(ngModel)]=\"selectedIndex\"\n                  (selectedIndexChanged)=\"onchange($event)\"\n                  (opened)=\"onopen()\"\n                  (closed)=\"onclose()\"\n                  row=\"0\"\n                  colSpan=\"2\"></DropDown>\n        <Label text=\"Selected Index:\"\n               row=\"1\"\n               col=\"0\"\n               fontSize=\"18\"\n               verticalAlignment=\"bottom\"></Label>\n        <TextField [text]=\"selectedIndex\"\n                   row=\"1\"\n                   col=\"1\"></TextField>\n    </GridLayout>\n</StackLayout>\n```\n\n```ts\n// app.component.ts\nimport { Component } from \"@angular/core\";\nimport { SelectedIndexChangedEventData } from \"nativescript-drop-down\";\n\n@Component({\n    selector: \"my-app\",\n    templateUrl:\"app.component.html\",\n})\nexport class AppComponent {\n    public selectedIndex = 1;\n    public items: Array<string>;\n \n    constructor() {\n        this.items = [];\n        for (var i = 0; i < 5; i++) {\n            this.items.push(\"data item \" + i);\n        }\n    }\n\n    public onchange(args: SelectedIndexChangedEventData) {\n        console.log(`Drop Down selected index changed from ${args.oldIndex} to ${args.newIndex}`);\n    }\n\n    public onopen() {\n        console.log(\"Drop Down opened.\");\n    }\n\n    public onclose() {\n        console.log(\"Drop Down closed.\");\n    }\n}\n```\n\n## Working with value and display members\nIt is a common case that you want to have one thing displayed in the drop down and then get some backend value\ntied to the tex. For example drop down with states you might want tos how the full state name (i.e. Florida)\nand then when working with your backend you want to use the state code (i.e. FL). The Drop Down items property can be\nset to either Array of objects or a custom object that implements `getItem(index: number): any` function and `length` proerty. With versionn 3.0 of the plugin it has a built in class that helps you with this scenario:\n\n```ts\nimport { ValueList } from \"nativescript-drop-down\";\n```\n\nThen you can set the `items` property of the DropDown to an instance of ValueList:\n```ts\nlet dd = page.getViewById<DropDown>(\"dd\");\nlet itemSource = new ValueList<string>([\n    { value: \"FL\", display: \"Florida\" }, \n    { value: \"MI\", display: \"Michigan\" }\n]);\ndd.items = itemSource;\n```\n\nThis enables you to do things like:  \n1.If you want to select an item in the DropDown by its backend value (for example FL), you can do this with:\n```ts\ndd.selectedIndex = itemSource.getIndex(\"FL\");\n```\n2.You can get the backend value of what the user selected using:\n```ts\nlet selectedValue = itemSource.getValue(dd.selectedIndex);\n```\n\n## Working with Webpack+Uglify\nIn case you are uing webpack and also are minifying/uglifying your code, there are some specific names that should be excluded from the uglification for the widget to work properly. The DropDown widget exports those and you need to add them to the mangle exclude option of the uglifyjs plugin in the `webpack.common.js` file:\n```js\nvar dropDownMangleExcludes = require(\"nativescript-drop-down/uglify-mangle-excludes\").default;\n//......\nmodule.exports = function (platform, destinationApp) {\n    //......\n    if (process.env.npm_config_uglify) {\n        plugins.push(new webpack.LoaderOptionsPlugin({\n            minimize: true\n        }));\n\n        //Work around an Android issue by setting compress = false\n        var compress = platform !== \"android\";\n        plugins.push(new webpack.optimize.UglifyJsPlugin({\n            mangle: {\n                except: nsWebpack.uglifyMangleExcludes.concat(dropDownMangleExcludes),\n            },\n            compress: compress,\n        }));\n    }\n   //......\n}\n```\n\n## Demos\nThis repository includes both Angular and plain NativeScript demos. In order to run those execute the following in your shell:\n```shell\n$ git clone https://github.com/peterstaev/nativescript-drop-down\n$ cd nativescript-drop-down\n$ npm install\n$ npm run demo-ios\n```\nThis will run the plain NativeScript demo project on iOS. If you want to run it on Android simply use the `-android` instead of the `-ios` sufix. \n\nIf you want to run the Angular demo simply use the `demo-ng-` prefix instead of `demo-`. \n\n\n## Donate\n`bitcoin:14fjysmpwLvSsAskvLASw6ek5XfhTzskHC`\n\n![Donate](https://www.tangrainc.com/qr.png)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterStaev/NativeScript-Drop-Down.git"
+  },
+  "scripts": {},
+  "typings": "drop-down.d.ts",
+  "version": "3.2.0"
+}

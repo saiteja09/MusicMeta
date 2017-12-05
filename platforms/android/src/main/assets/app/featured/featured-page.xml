@@ -1,0 +1,100 @@
+<Page
+    class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns:nsDrawer="nativescript-pro-ui/sidedrawer"
+    xmlns:myDrawer="shared/my-drawer"
+    xmlns:lv="nativescript-pro-ui/listview"
+    xmlns="http://www.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <!-- 
+        Use the NavigationButton as a side-drawer button in Android because ActionItems are shown on the right side of the ActionBar
+        -->
+        <NavigationButton text="Go Back" android.systemIcon="ic_menu_back" tap="onNavBtnTap"/>
+        <!-- 
+        Use the ActionItem for IOS with position set to left. Using the NavigationButton as a side-drawer button in iOS is not possible, because its function is to always navigate back in the application.
+        -->
+        <ActionItem icon="res://navigation/menu" 
+            android:visibility="collapsed" 
+            tap="onDrawerButtonTap"
+            ios.position="left">
+        </ActionItem>
+        <Label class="action-bar-title" text="Tracks"></Label>
+    </ActionBar>
+
+
+
+
+    <!--
+    RadSideDrawer is a UI component part of the Progress NativeScript UI set of components.
+    Learn more about the RadSideDrawer UI component and how it can be customized in this documentation article:
+    http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawer/getting-started
+    The RadSideDrawer component is designed to be used as a root element to the <Page> and
+    it shouldn't have any other siblings other than the <ActionBar> component.
+    -->
+    <nsDrawer:RadSideDrawer id="sideDrawer" showOverNavigation="true">
+        <!--
+        Use the RadSideDrawer.drawerTransition component to change the open/close animation of the drawer.
+        -->
+        <nsDrawer:RadSideDrawer.drawerTransition>
+            <nsDrawer:SlideInOnTopTransition/>
+        </nsDrawer:RadSideDrawer.drawerTransition>
+
+        <!--
+        Use the RadSideDrawer.drawerContent component to display the content of the app drawer on this page.
+        Always wrap content in a layout component.
+        -->
+        <nsDrawer:RadSideDrawer.drawerContent>
+            <StackLayout>
+                <!--
+                Use {N} custom components to reuse UI across your mobile app.
+                The MyDrawer custom component defined in "/shared/my-drawer" holds the contents of the app drawer.
+                Learn more about custom components and how they can be used in this documentation article:
+                http://docs.nativescript.org/ui/basics#custom-components
+                -->
+                <myDrawer:MyDrawer selectedPage="Featured"/>
+            </StackLayout>
+        </nsDrawer:RadSideDrawer.drawerContent>
+
+        <!--
+        Use the RadSideDrawer.mainContent component to display the content of the page when you have an app drawer.
+        Always wrap content in a layout component.
+        -->
+        <nsDrawer:RadSideDrawer.mainContent>
+
+            <StackLayout class="album-info" >
+                <StackLayout class="album-info-featured">
+                <Image width="175" height="175" class="thumb img-rounded album-art-featured" id="album-art-img" src="{{ albumart }}"/>
+                <Label id="albumname" class="label-album-name" text= "{{ albumname }}"/>
+                <Label id="artistname" class= "label-artist-name"  text= "{{ artistname }}"/>
+                </StackLayout>
+
+                <lv:RadListView id="tracksview" class="list-group" items="{{ items }}" selectionBehavior="Press" multipleSelection="false" itemSelected="onItemSelected" marginTop="15" > 
+                    <lv:RadListView.listViewLayout>
+                        <lv:ListViewLinearLayout scrollDirection="Vertical"/>
+                    </lv:RadListView.listViewLayout>
+
+                    <lv:RadListView.itemTemplate>
+
+                        <GridLayout class="list-group-item" rows="auto" columns="auto, *, auto">
+                            <Label text="{{ TrackId }}" class="list-group-item-text label-trackids"/>
+                            <StackLayout row="0" col="1" marginLeft="20">
+                                <Label text="{{ Name }}" class="list-group-item-heading label-track-name" />
+                                <Label text="{{ Composer }}"  class="list-group-item-text label-composer-name" />
+                                <Label text="{{ '$' + UnitPrice }}" class="list-group-item-text label-track_unitprice" style="color: #f84c5c"/>
+                                
+                            </StackLayout>
+                            <Image src="~/images/pay2.png" row="0" col="2" tap="buyTrack" id="trackbuyicn"/>
+                        </GridLayout>
+                    
+                    </lv:RadListView.itemTemplate>
+
+                </lv:RadListView>
+            </StackLayout>
+
+
+            
+
+        </nsDrawer:RadSideDrawer.mainContent>
+    </nsDrawer:RadSideDrawer>
+</Page>

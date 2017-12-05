@@ -1,0 +1,116 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-toast",
+        "scope": null,
+        "escapedName": "nativescript-toast",
+        "name": "nativescript-toast",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta"
+    ]
+  ],
+  "_from": "nativescript-toast@latest",
+  "_id": "nativescript-toast@1.4.6",
+  "_inCache": true,
+  "_location": "/nativescript-toast",
+  "_nodeVersion": "6.11.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/nativescript-toast-1.4.6.tgz_1499922265128_0.9650790626183152"
+  },
+  "_npmUser": {
+    "name": "hypery2k",
+    "email": "contact@martinreinhardt-online.de"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-toast",
+    "scope": null,
+    "escapedName": "nativescript-toast",
+    "name": "nativescript-toast",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-toast/-/nativescript-toast-1.4.6.tgz",
+  "_shasum": "512464251028cf278c94cffcf65af8cc0f7ae4fa",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-toast",
+  "_where": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta",
+  "author": {
+    "name": "Tobias Hennig",
+    "email": "tobias.hennig1@gmail.com",
+    "url": "https://github.com/TobiasHennig"
+  },
+  "bugs": {
+    "url": "https://github.com/TobiasHennig/nativescript-toast/issues"
+  },
+  "dependencies": {},
+  "description": "A NativeScript Toast Plugin for Android and iOS apps.",
+  "devDependencies": {
+    "conventional-changelog-cli": "1.2.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "512464251028cf278c94cffcf65af8cc0f7ae4fa",
+    "tarball": "https://registry.npmjs.org/nativescript-toast/-/nativescript-toast-1.4.6.tgz"
+  },
+  "gitHead": "286fe3e1ed702808a09da97ef55c79b732a8a7ca",
+  "homepage": "https://github.com/TobiasHennig/nativescript-toast#readme",
+  "keywords": [
+    "NativeScript",
+    "Toast",
+    "Notification",
+    "Android"
+  ],
+  "license": "MIT",
+  "main": "toast",
+  "maintainers": [
+    {
+      "name": "hypery2k",
+      "email": "contact@martinreinhardt-online.de"
+    },
+    {
+      "name": "tobiashennig",
+      "email": "tobias.hennig1@gmail.com"
+    }
+  ],
+  "name": "nativescript-toast",
+  "nativescript": {
+    "platforms": {
+      "android": "1.3.0",
+      "ios": "1.3.0"
+    }
+  },
+  "optionalDependencies": {},
+  "readme": "# NativeScript Toast Plugin\r\n\r\n[![Build Status](https://travis-ci.org/TobiasHennig/nativescript-toast.svg?branch=master)](https://travis-ci.org/TobiasHennig/nativescript-toast)\r\n [![npm version](https://badge.fury.io/js/nativescript-toast.svg)](http://badge.fury.io/js/nativescript-toast)\r\n\r\n> A NativeScript Toast Plugin for Android and iOS apps.\r\n\r\n[![NPM](https://nodei.co/npm/nativescript-toast.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nativescript-toast/)\r\n\r\n## What is a toast?\r\n\r\n> A toast provides simple feedback about an operation in a small popup. It only fills the amount of space required for the message and the current activity remains visible and interactive. - [Android Developer](http://developer.android.com/guide/topics/ui/notifiers/toasts.html)\r\n\r\n![image](showcase.png)\r\n\r\n## Demo\r\n\r\nHow to install and use this plugin? Watch it on [YouTube](https://www.youtube.com/watch?v=2RWtX4crzyE)!\r\n\r\nWant simple example application to play with? [nativescript-toast-example](https://github.com/TobiasHennig/nativescript-toast-example)\r\n\r\n## Installation\r\n\r\nRun the following command from the root of your project:\r\n\r\n```\r\n$ tns plugin add nativescript-toast\r\n```\r\n\r\nOr the develop version, which may **not working** completly:\r\n\r\n```\r\n$ tns plugin add nativescript-toast@next\r\n```\r\n\r\n## Usage\r\n\r\n```js\r\nvar Toast = require(\"nativescript-toast\");\r\n\r\n// ...\r\n\r\nvar toast = Toast.makeText(\"Hello World\");\r\ntoast.show();\r\n```\r\nOr via import:\r\n\r\n```js\r\nimport * as Toast from 'nativescript-toast';\r\n\r\n// ...\r\n\r\nvar toast = Toast.makeText(\"Hello World\");\r\ntoast.show();\r\n```\r\n\r\nIt is also possible to chain the methods.\r\n```js\r\nToast.makeText(\"Hello World\").show();\r\n```\r\n\r\nPass `\"long\"` to the `makeText` function to show the toast a bit longer.\r\n```js\r\nToast.makeText(\"Hello World\", \"long\").show();\r\n```\r\n\r\n## Development\r\n\r\n* Android SDK\r\n* Xcode 8+\r\n\r\n[![npm version](https://badge.fury.io/js/nativescript-toast.svg)](http://badge.fury.io/js/nativescript-toast)\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TobiasHennig/nativescript-toast.git"
+  },
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "changelog:add": "git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md'",
+    "clean": "git checkout samples/angular/package.json && rm -rf node_modules target tmp && mkdir -p tmp && mkdir -p tmp/angular && cd samples/angular && rm -rf node_modules hooks platforms",
+    "e2e": "cd samples/angular && tns test ios --emulator --justlaunch",
+    "pre-e2e": "cd samples/angular && tns install && tns platform add ios && tns platform add android && tns build ios && tns build android",
+    "release:major": "npm run release:pre && npm version major && npm run release:post && git push origin && git push origin --tags && npm publish",
+    "release:minor": "npm run release:pre && npm version minor && npm run release:post && git push origin && git push origin --tags && npm publish",
+    "release:patch": "npm run release:pre && npm version patch && npm run release:post && git push origin && git push origin --tags && npm publish",
+    "release:post": "npm run changelog && npm run changelog:add",
+    "release:pre": "npm run clean && npm run test",
+    "test": "cd tmp/angular && cp -rp ../../samples/angular/* . && rm -rf platforms node_modules hooks && tns plugin add ../.. && tns install && tns build ios && tns build android"
+  },
+  "typings": "index.d.ts",
+  "version": "1.4.6"
+}

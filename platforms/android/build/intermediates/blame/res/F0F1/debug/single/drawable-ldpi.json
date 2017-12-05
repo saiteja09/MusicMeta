@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\drawable-ldpi\\background.png",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\src\\main\\res\\drawable-ldpi\\background.png"
+    },
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\drawable-ldpi\\logo.png",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\src\\main\\res\\drawable-ldpi\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\drawable-ldpi\\icon.png",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\src\\main\\res\\drawable-ldpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\drawable-ldpi\\menu.png",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\src\\main\\res\\drawable-ldpi\\menu.png"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\menu\\view_feedback_items_activity_menu.xml",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\exploded-aar\\Feedback-2017.1.1030-dev-release\\res\\menu\\view_feedback_items_activity_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\menu\\send_feedback_activity_menu.xml",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\exploded-aar\\Feedback-2017.1.1030-dev-release\\res\\menu\\send_feedback_activity_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\menu\\edit_details.xml",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\exploded-aar\\Feedback-2017.1.1030-dev-release\\res\\menu\\edit_details.xml"
+    }
+]

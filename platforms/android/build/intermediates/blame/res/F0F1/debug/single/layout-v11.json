@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v11\\simple_list_item.xml",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\exploded-aar\\List-2017.1.1030-dev-release\\res\\layout-v11\\simple_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\26.0.0-alpha1\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1\\debug\\layout-v11\\on_demand_manual.xml",
+        "source": "C:\\Users\\sbobba\\Documents\\NativeScript\\MusicMeta\\platforms\\android\\build\\intermediates\\exploded-aar\\List-2017.1.1030-dev-release\\res\\layout-v11\\on_demand_manual.xml"
+    }
+]

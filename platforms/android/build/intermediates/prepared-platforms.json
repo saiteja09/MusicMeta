@@ -1,0 +1,10 @@
+{
+    "base-64": true,
+    "nativescript-drop-down": true,
+    "nativescript-pro-ui": true,
+    "nativescript-theme-core": true,
+    "nativescript-toast": true,
+    "tns-core-modules": true,
+    "utf8": true,
+    "tns-core-modules-widgets": true
+}

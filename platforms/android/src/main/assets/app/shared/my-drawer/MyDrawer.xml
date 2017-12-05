@@ -1,0 +1,51 @@
+<!--
+The MyDrawer custom component view is where you define what will be displayed in the app drawer.
+Feel free to customize layouts and components to change how your app drawer looks.
+-->
+<GridLayout rows="auto, *" class="sidedrawer sidedrawer-left" loaded="onLoaded"
+    xmlns:myDrawer="shared/my-drawer">
+    <StackLayout class="sidedrawer-header">
+        <Image src="~/images/Progress.png" width="47" height="47" class="progress-logo"/>
+        <Label class="sidedrawer-header-brand" text="Music Meta"/>
+        <Label text="Powered by Hybrid Data Pipeline" style="color:white;"/>
+        
+    </StackLayout>
+
+    <ScrollView row="1">
+        <StackLayout class="sidedrawer-content" row="1">
+            <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Home' ? ' selected': '') }}"
+                route="home/home-page" tap="onNavigationItemTap">
+                <Label row="0" col="0" text="&#xf015;" class="fa" />
+                <Label row="0" col="1" text="Library" class="p-r-10" />
+            </GridLayout>
+
+            <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Browse' ? ' selected': '') }}"
+                route="browse/browse-page" tap="onNavigationItemTap">
+                <Label row="0" col="0" text="&#xf1ea;" class="fa" />
+                <Label row="0" col="1" text="Browse Store" class="p-r-10" />
+            </GridLayout>
+
+            <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Search' ? ' selected': '') }}"
+                route="search/search-page" tap="onNavigationItemTap">
+                <Label row="0" col="0" text="&#xf002;" class="fa" />
+                <Label row="0" col="1" text="Search Store" class="p-r-10" />
+            </GridLayout>
+
+
+
+            <StackLayout class="hr-light"></StackLayout>
+
+            <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Settings' ? ' selected': '') }}"
+                route="settings/settings-page" tap="onNavigationItemTap">
+                <Label row="0" col="0" text="&#xf013;" class="fa" />
+                <Label row="0" col="1" text="Settings" class="p-r-10" />
+            </GridLayout>
+
+            <GridLayout columns="auto, *" class="{{ 'sidedrawer-list-item' + (selectedPage === 'Logs' ? ' selected': '') }}"
+                route="logs/logs-page" tap="onNavigationItemTap">
+                <Label row="0" col="0" text="&#xf040;" class="fa" />
+                <Label row="0" col="1" text="Logs" class="p-r-10" />
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>
