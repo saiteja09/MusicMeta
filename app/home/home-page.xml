@@ -61,7 +61,7 @@
             <StackLayout class="tracks-library">
 
                 <Label id="tracks" class= "label-tracks" text="Downloaded Tracks"/>
-                <lv:RadListView id="tracksview" class="list-group" items="{{ items }}" marginTop="15" > 
+                <lv:RadListView id="tracksview" class="list-group" items="{{ items }}" marginTop="15" selectionBehavior="Press" multipleSelection="false" itemSelected="onItemSelected"> 
                     <lv:RadListView.listViewLayout>
                         <lv:ListViewLinearLayout scrollDirection="Vertical"/>
                     </lv:RadListView.listViewLayout>
@@ -75,6 +75,7 @@
                                 <Label text="{{ Name }}" class="list-group-item-heading label-track-name" />
                                 <Label text="{{ Composer }}" class="list-group-item-text" />
                             </StackLayout>
+                            <Image src="~/images/refund.png" row="0" col="2" tap="refundTrack" id="trackbuyicn"/>
                             
                         </GridLayout>
                     

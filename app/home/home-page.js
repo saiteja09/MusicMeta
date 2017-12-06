@@ -121,3 +121,4 @@ function onDrawerButtonTap(args) {
 
 exports.onNavigatingTo = onNavigatingTo;
 exports.onDrawerButtonTap = onDrawerButtonTap;
+exports.refundTrack = refundTrack;
