@@ -259,11 +259,14 @@ function postPurchaseInvoice(customerData, item)
             {
                 max_invoiceId= invoice[0].InvoiceId;
             }
+
+            var d = new Date();
+            var loggedTime = d.toISOString();
             
             var postBody = {
                 InvoiceId: max_invoiceId + 1,
                 CustomerId: customerData.CustomerId,
-                InvoiceDate: "2016-04-30T23:59:59.999+02:00",
+                InvoiceDate: loggedTime,
                 BillingAddress: customerData.Address,
                 BillingCity: customerData.City,
                 BillingState: customerData.State,

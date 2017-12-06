@@ -88,9 +88,11 @@ function onNavigatingTo(args) {
         var password_textField = page.getViewById("password");
         password_textField.text = appSettings.getString("password");
 
+        getCustomers(page);
+
     }
 
-        getCustomers(page);
+        
 
     page.bindingContext = new SettingsViewModel();
 }

@@ -74,6 +74,7 @@
                             <StackLayout row="0" col="1" marginLeft="20">
                                 <Label text="{{ Name }}" class="list-group-item-heading label-track-name" />
                                 <Label text="{{ Composer }}" class="list-group-item-text" />
+                                <Label text="{{ TrackId }}" class="label-trackids"/>
                             </StackLayout>
                             <Image src="~/images/refund.png" row="0" col="2" tap="refundTrack" id="trackbuyicn"/>
                             
